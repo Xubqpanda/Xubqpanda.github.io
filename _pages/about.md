@@ -29,11 +29,13 @@ Publications
 ======
 (\*: equal contribution; †: corresponding author)
 
-* **LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain** Xin Dai\*, **Buqiang Xu**\*, Zhenghao Liu†, Yukun Yan, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Ge Yu  
+* **LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain**
+* Xin Dai\*, **Buqiang Xu**\*, Zhenghao Liu†, Yukun Yan, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Ge Yu  
   *ICASSP 2026 (CCF-B)*, Barcelona, Spain, 2026  
   [[Paper]](https://arxiv.org/abs/2508.12281)
   
-* **LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning** **Buqiang Xu**\*, Xin Dai\*, Zhenghao Liu†, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Yukun Yan, Liner Yang, Yu Gu, Ge Yu  
+* **LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning**
+* **Buqiang Xu**\*, Xin Dai\*, Zhenghao Liu†, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Yukun Yan, Liner Yang, Yu Gu, Ge Yu  
   *ADMA 2025 (CCF-C) Best Paper Award*, Kyoto, Japan, 2025  
   [[Paper]](https://arxiv.org/abs/2401.15371)
   
