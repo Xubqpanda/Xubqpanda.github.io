@@ -30,7 +30,7 @@ Publications
 (\*: equal contribution; †: corresponding author)
 
 * **LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain** Xin Dai\*, **Buqiang Xu**\*, Zhenghao Liu†, Yukun Yan, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Ge Yu  
-  *IEEE International Conference on Acoustics, Speech and Signal Processing (**ICASSP**)*, 2026.  
+  *ICASSP 2026 (CCF-B), Barcelona, Spain, 2026  
   [[Paper]](https://arxiv.org/abs/2508.12281)
   
 * **LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning**  
