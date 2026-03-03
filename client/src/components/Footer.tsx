@@ -12,7 +12,7 @@ export default function Footer() {
       const script = document.createElement('script');
       script.id = 'mapmyvisitors';
       script.type = 'text/javascript';
-      script.src = 'https://mapmyvisitors.com/map.js?cl=ffffff&w=400&t=tt&d=OsdhPxdEczfiTFHwqskcKzqDSwDY6eYWewwj-JzD56E&co=0f1827';
+      script.src = '//mapmyvisitors.com/map.js?d=RIhWCh2TiVsZaot0LOGMpK0Io_jyrxb-EnIZFWPHkuM&cl=ffffff&w=a';
       script.async = true;
       
       const container = document.getElementById('mapmyvisitors-container');
