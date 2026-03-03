@@ -18,52 +18,21 @@ export default function MainContent() {
         </h2>
         <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
           <p>
-            {personalInfo.aboutMe.intro.split('Kahlert School of Computing at the University of Utah')[0]}
-            <a
-              href="https://www.cs.utah.edu/"
-              target="_blank"
-              rel="noopener"
-              className="text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 font-semibold underline decoration-2 underline-offset-2"
-            >
-              Kahlert School of Computing at the University of Utah
-            </a>
-            {', advised by '}
-            <a
-              href={personalInfo.advisors[0].url}
-              target="_blank"
-              rel="noopener"
-              className="text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 font-semibold underline decoration-2 underline-offset-2"
-            >
-              {personalInfo.advisors[0].name}
-            </a>
-            {' and '}
-            <a
-              href={personalInfo.advisors[1].url}
-              target="_blank"
-              rel="noopener"
-              className="text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 font-semibold underline decoration-2 underline-offset-2"
-            >
-              {personalInfo.advisors[1].name}
-            </a>
-            {'. Currently, I have been working as a Research Assistant under the supervision of '}
-            <a
-              href={personalInfo.advisors[2].url}
-              target="_blank"
-              rel="noopener"
-              className="text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 font-semibold underline decoration-2 underline-offset-2"
-            >
-              {personalInfo.advisors[2].name}
-            </a>
-            {' at UNC-Chapel Hill and '}
-            <a
-              href={personalInfo.advisors[3].url}
-              target="_blank"
-              rel="noopener"
-              className="text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 font-semibold underline decoration-2 underline-offset-2"
-            >
-              {personalInfo.advisors[3].name}
-            </a>
-            {' at Shanghai Jiao Tong University.'}
+            {personalInfo.aboutMe.intro}
+            {personalInfo.advisors.length > 0 && (
+              <>
+                {' Advised by '}
+                <a
+                  href={personalInfo.advisors[0].url}
+                  target="_blank"
+                  rel="noopener"
+                  className="text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 font-semibold underline decoration-2 underline-offset-2"
+                >
+                  {personalInfo.advisors[0].name}
+                </a>
+              </>
+            )}
+            {'.'}
           </p>
 
           <p>{personalInfo.aboutMe.researchFocus}</p>
