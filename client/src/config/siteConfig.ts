@@ -20,7 +20,7 @@ export const personalInfo = {
   
   // Hero Section
   heroQuote: "The higher I got, the more amazed I was by the view.",
-  heroAttribution: "",
+  heroAttribution: "Flipped",
   
   // About Me
   aboutMe: {
