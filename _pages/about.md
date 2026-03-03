@@ -22,7 +22,7 @@ redirect_from:
 ### 2026
 * **MobileMem: Evaluating Long-Horizon Memory for Language Agents in Real-World Mobile Environments**
 
-  Xinle Deng, Yida Xue, Yijun Chen, Mingjun Mao, Ruobin Zhong, Buqiang Xu, Jizhan Fang, Haoming Xu, Tingwei Wu, Yajing Xu, Shumin Deng, Haofen Wang, Huajun Chen, Ningyu Zhang 
+  Xinle Deng, Yida Xue, Yijun Chen, Mingjun Mao, Ruobin Zhong, **Buqiang Xu**, Jizhan Fang, Haoming Xu, Tingwei Wu, Yajing Xu, Shumin Deng, Haofen Wang, Huajun Chen, Ningyu Zhang† 
 
   *ICLR 2026 Workshop LLA*, Rio de Janeiro, Brazil
 
