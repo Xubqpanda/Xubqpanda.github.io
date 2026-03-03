@@ -69,19 +69,14 @@ export default function MainContent() {
                 {pub.title}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                {pub.authors.split('Yibin Liu').map((part, index, array) => (
-                  <span key={index}>
-                    {part}
-                    {index < array.length - 1 && <strong>Yibin Liu</strong>}
-                  </span>
-                ))}
+                {pub.authors}
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400 italic">
                 {pub.venue}, {pub.year}
               </p>
 
               <div className="flex flex-wrap gap-2 mt-2 items-center">
-                {pub.links.map((link, idx) => (
+                {pub.links && pub.links.map((link, idx) => (
                   <a
                     key={idx}
                     href={link.url}
