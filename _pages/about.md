@@ -21,17 +21,23 @@ redirect_from:
 
 ### 2026
 * **MobileMem: Evaluating Long-Horizon Memory for Language Agents in Real-World Mobile Environments**
+
   Xinle Deng, Yida Xue, Yijun Chen, Mingjun Mao, Ruobin Zhong, Buqiang Xu, Jizhan Fang, Haoming Xu, Tingwei Wu, Yajing Xu, Shumin Deng, Haofen Wang, Huajun Chen, Ningyu Zhang 
+
   *ICLR 2026 Workshop LLA*, Rio de Janeiro, Brazil
 
 * **LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain**
+
   Xin Dai\*, **Buqiang Xu**\*, Zhenghao Liu†, Yukun Yan, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Ge Yu
+
   *ICASSP 2026 (CCF-B)*, Barcelona, Spain
   [[Paper]](https://arxiv.org/abs/2508.12281)
 
 ### 2025
 * **LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning**
+
   **Buqiang Xu**\*, Xin Dai\*, Zhenghao Liu†, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Yukun Yan, Liner Yang, Yu Gu, Ge Yu
+
   *ADMA 2025 (CCF-C)* **Best Paper Award**, Kyoto, Japan
   [[Paper]](https://arxiv.org/abs/2401.15371)
 
