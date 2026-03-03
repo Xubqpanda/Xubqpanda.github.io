@@ -19,7 +19,7 @@ export const personalInfo = {
   email: "Xubqpanda@gmail.com",
   
   // Hero Section
-  heroQuote: "",
+  heroQuote: "The higher I got, the more amazed I was by the view.",
   heroAttribution: "",
   
   // About Me
