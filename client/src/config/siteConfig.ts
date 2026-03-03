@@ -105,7 +105,7 @@ export const publications = [
     title: "LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain",
     venue: "ICASSP 2026 [CCF-B]",
     year: 2026,
-    githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDelta",
+    githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDelta?style=flat",
     links: [
       { text: "Paper", url: "https://arxiv.org/abs/2508.12281" },
       { text: "Code", url: "https://github.com/NEUIR/LegalDelta" },
@@ -117,7 +117,7 @@ export const publications = [
     title: "LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning",
     venue: "ADMA 2025 [CCF-C] Best Paper Award",
     year: 2025,
-    githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDuet",
+    githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDuet?style=flat",
     links: [
       { text: "Paper", url: "https://arxiv.org/abs/2401.15371" },
       { text: "Code", url: "https://github.com/NEUIR/LegalDuet" },
@@ -234,28 +234,28 @@ export const projects = [
     id: 1,
     title: "LightMem: Lightweight and Efficient Memory-Augmented Generation",
     description: "Our core framework for long-term memory in LLMs. It focuses on efficient memory construction and integration, enabling agents to handle long-horizon tasks with minimal overhead. (Accepted to ICLR 2026)",
-    githubStars: "https://img.shields.io/github/stars/zjunlp/LightMem",
+    githubStars: "https://img.shields.io/github/stars/zjunlp/LightMem?style=flat",
     link: "https://github.com/zjunlp/LightMem"
   },
   {
     id: 2,
     title: "EasyEdit: An Easy-to-use Knowledge Editing Framework for LLMs",
     description: "A comprehensive and modular framework for editing knowledge in Large Language Models. It supports various state-of-the-art editing algorithms, helping models stay up-to-date and factual.",
-    githubStars: "https://img.shields.io/github/stars/zjunlp/EasyEdit",
+    githubStars: "https://img.shields.io/github/stars/zjunlp/EasyEdit?style=flat",
     link: "https://github.com/zjunlp/EasyEdit"
   },
   {
     id: 3,
     title: "LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain",
     description: "Enhancing the reasoning capabilities of LLMs in specialized domains using Reinforcement Learning with Chain-of-Thought guided information gain. (ICASSP 2026)",
-    githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDelta",
+    githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDelta?style=flat",
     link: "https://github.com/NEUIR/LegalDelta"
   },
   {
     id: 4,
     title: "LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning",
     description: "A representation learning method for Legal Judgment Prediction. This work was recognized with the Best Paper Award at ADMA 2025.",
-    githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDuet",
+    githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDuet?style=flat",
     link: "https://github.com/NEUIR/LegalDuet"
   }
 ];
