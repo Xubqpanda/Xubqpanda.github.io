@@ -69,7 +69,12 @@ export default function MainContent() {
                 {pub.title}
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                {pub.authors}
+                {pub.authors.split('Buqiang Xu').map((part, index, array) => (
+                  <span key={index}>
+                    {part}
+                    {index < array.length - 1 && <strong>Buqiang Xu</strong>}
+                  </span>
+                ))}
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400 italic">
                 {pub.venue}, {pub.year}
