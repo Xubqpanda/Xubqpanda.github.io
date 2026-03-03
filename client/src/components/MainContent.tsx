@@ -3,9 +3,6 @@ import {
   personalInfo, 
   publications, 
   researchExperiences, 
-  industryExperiences, 
-  talks, 
-  academicService, 
   awards, 
   projects, 
   technologies 
