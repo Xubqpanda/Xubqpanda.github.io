@@ -191,6 +191,7 @@ export default function MainContent() {
                     alt="GitHub repo stars"
                     src={project.githubStars}
                     className="h-5"
+                    onError={(e) => (e.currentTarget.style.display = 'none')}
                   />
                 )}
               </div>
