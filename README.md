@@ -1,51 +1,162 @@
-# Academic Pages
+# Yibin (Leon) Liu - Academic Personal Website
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+A modern, responsive academic personal website built with React and deployed as a static site on GitHub Pages.
 
-Academic Pages is a Github Pages template for academic websites.
 
-# Getting Started
+Visit the live website: [https://10-oasis-01.github.io](https://10-oasis-01.github.io)
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+Also check out these amazing homepages based on Yibin's version: 
 
-See more info at https://academicpages.github.io/
+[Jingqi Fan's personal academic website](https://jingqi-fan.github.io),
 
-## Running Locally
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+> **For detailed development information, see [DEVELOPMENT.md](DEVELOPMENT.md)**
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Features
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+- **Modern Tech Stack**: Built with React 19, Vite, TypeScript, and Tailwind CSS
+- **Responsive Design**: Optimized for all devices using Radix UI components
+- **SEO Optimized**: Comprehensive meta tags, structured data, and sitemap
+- **Fast Performance**: Static site generation with optimized builds
+- **Academic Focus**: Designed specifically for academic professionals and researchers
 
-# Maintenance
+## Architecture
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+This is a **single-page application (SPA)** deployed as a static website:
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+- **Frontend**: React 19 with TypeScript
+- **Styling**: Tailwind CSS with Radix UI components  
+- **Routing**: Wouter for client-side routing
+- **Build Tool**: Vite for fast development and optimized builds
+- **Deployment**: GitHub Pages with automated CI/CD
 
-## Bugfixes and enhancements
+## Project Structure
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+```
+├── client/                 # Frontend application
+│   ├── src/               # Source code
+│   │   ├── components/    # React components
+│   │   ├── config/        # Configuration files
+│   │   ├── pages/         # Page components
+│   │   └── styles/        # Global styles
+│   ├── public/            # Static assets
+│   └── index.html         # HTML template
+├── .github/workflows/     # GitHub Actions
+└── package.json           # Dependencies and scripts
+```
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## Quick Start
+
+### Prerequisites
+- Node.js 18+
+- pnpm (recommended) or npm
+
+### Getting Started
+```bash
+# Clone the repository
+git clone https://github.com/10-OASIS-01/10-OASIS-01.github.io.git
+cd 10-OASIS-01.github.io
+
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
+```
+
+### Available Scripts
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm check` - Type checking
+- `pnpm format` - Format code with Prettier
+
+For detailed development documentation, including architecture, configuration, and deployment guides, see [DEVELOPMENT.md](DEVELOPMENT.md).
+
+## Customization
+
+### Personal Information
+Edit `client/src/config/siteConfig.ts` to update:
+- Personal details and bio
+- Research interests  
+- Social media links
+- Academic affiliations
+
+### Blog Posts
+Edit `client/src/config/blogConfig.ts` to:
+- Add new blog posts
+- Modify existing content
+- Update blog metadata
+
+## Deployment
+
+The site automatically deploys to GitHub Pages when changes are pushed to the `master` branch via GitHub Actions.
+
+For manual deployment and advanced configuration, see the [Deployment section in DEVELOPMENT.md](DEVELOPMENT.md#deployment).
+
+## SEO Features
+
+- Comprehensive meta tags for search engines
+- Open Graph tags for social media sharing  
+- Twitter Card support
+- JSON-LD structured data for academic profiles
+- XML sitemap generation
+- Robots.txt for crawler guidance
+- Canonical URLs and proper heading hierarchy
+
+## Performance
+
+- Static site generation for fast loading
+- Code splitting and lazy loading
+- Optimized images and assets
+- Minimal bundle size
+- Progressive Web App features
+
+## Technology Stack
+
+### Core
+- **React 19** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+
+### Styling & UI
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible component primitives
+- **Framer Motion** - Animation library
+
+### Tools & Utilities
+- **Wouter** - Lightweight router
+- **Lucide React** - Icon library
+- **React Hook Form** - Form handling
+- **Date-fns** - Date utilities
+
+## Documentation
+
+- [README.md](README.md) - This file, quick start and overview
+- [DEVELOPMENT.md](DEVELOPMENT.md) - Comprehensive development documentation
+- [FILE_STORAGE_GUIDE.md](FILE_STORAGE_GUIDE.md) - File storage and asset management
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Please read [DEVELOPMENT.md](DEVELOPMENT.md) for development guidelines.
+
+## Contact
+
+**Yibin (Leon) Liu**
+- Email: kevin.lau.stu@gmail.com
+- GitHub: [@10-OASIS-01](https://github.com/10-OASIS-01)
+- LinkedIn: [yibin-leon-liu](https://www.linkedin.com/in/yibin-leon-liu)
+
+---
+
+*This website serves as a professional academic portfolio showcasing research, publications, and professional experience in the field of Artificial Intelligence and Robotics.*

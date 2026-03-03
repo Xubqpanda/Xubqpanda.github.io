@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://10-oasis-01.github.io/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
