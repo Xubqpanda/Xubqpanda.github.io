@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { 
   personalInfo, 
   publications, 
@@ -79,6 +80,20 @@ export default function MainContent() {
               <p className="text-sm text-gray-600 dark:text-gray-400 italic">
                 {pub.venue}, {pub.year}
               </p>
+
+              {pub.keywords && pub.keywords.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {pub.keywords.map((keyword, idx) => (
+                    <Badge
+                      key={idx}
+                      variant="outline"
+                      className="text-xs text-blue-900 dark:text-blue-300 border-blue-900 dark:border-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/20"
+                    >
+                      {keyword}
+                    </Badge>
+                  ))}
+                </div>
+              )}
 
               <div className="flex flex-wrap gap-2 mt-2 items-center">
                 {pub.links && pub.links.map((link, idx) => (

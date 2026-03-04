@@ -98,6 +98,7 @@ export const publications = [
     title: "MobileMem: Evaluating Long-Horizon Memory for Language Agents in Real-World Mobile Environments",
     venue: "ICLR 2026 Workshop LLA",
     year: 2026,
+    keywords: ["Agentic Memory", "Long-term Memory", "Agent Evaluation"],
   },
   {
     id: 2,
@@ -105,6 +106,7 @@ export const publications = [
     title: "LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain",
     venue: "ICASSP 2026 [CCF-B]",
     year: 2026,
+    keywords: ["Reinforcement Learning", "Chain-of-Thought", "Reasoning Inference"],
     githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDelta?style=flat",
     links: [
       { text: "Paper", url: "https://arxiv.org/abs/2508.12281" },
@@ -117,6 +119,7 @@ export const publications = [
     title: "LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning",
     venue: "ADMA 2025 [CCF-C] Best Paper Award",
     year: 2025,
+    keywords: ["Contrastive Learning", "Representation Learning"],
     githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDuet?style=flat",
     links: [
       { text: "Paper", url: "https://arxiv.org/abs/2401.15371" },
