@@ -106,7 +106,7 @@ export const publications = [
     title: "LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain",
     venue: "ICASSP 2026 [CCF-B]",
     year: 2026,
-    keywords: ["Reinforcement Learning", "Chain-of-Thought", "Reasoning Inference"],
+    keywords: ["Reinforcement Learning", "Chain-of-Thought", "LLM Reasoning"],
     githubStars: "https://img.shields.io/github/stars/NEUIR/LegalDelta?style=flat",
     links: [
       { text: "Paper", url: "https://arxiv.org/abs/2508.12281" },
