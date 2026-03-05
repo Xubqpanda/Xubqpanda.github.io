@@ -96,7 +96,7 @@ export const publications = [
     id: 1,
     authors: "Xinle Deng, Yida Xue, Yijun Chen, Mingjun Mao, Ruobin Zhong, Buqiang Xu, Jizhan Fang, Haoming Xu, Tingwei Wu, Yajing Xu, Shumin Deng, Haofen Wang, Huajun Chen, Ningyu Zhang†",
     title: "MobileMem: Evaluating Long-Horizon Memory for Language Agents in Real-World Mobile Environments",
-    venue: "ICLR 2026 Workshop LLA",
+    venue: "ICLR 2026 [CCF-A] Workshop LLA",
     year: 2026,
     keywords: ["Agentic Memory", "Long-term Memory", "Agent Evaluation"],
   },
