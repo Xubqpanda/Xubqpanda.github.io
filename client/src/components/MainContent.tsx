@@ -1,3 +1,4 @@
+import StarBadge from "@/components/StarBadge";
 import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { 
@@ -108,10 +109,9 @@ export default function MainContent() {
                   </a>
                 ))}
                 {'githubStars' in pub && pub.githubStars && (
-                  <img
-                    alt="GitHub repo stars"
-                    src={pub.githubStars}
-                    className="h-5"
+                  <StarBadge
+                    shieldsUrl={pub.githubStars}
+                    repoLink={pub.links?.find((l) => l.text === "Code")?.url}
                   />
                 )}
               </div>
@@ -207,11 +207,9 @@ export default function MainContent() {
                   </a>
                 )}
                 {'githubStars' in project && project.githubStars && (
-                  <img
-                    alt="GitHub repo stars"
-                    src={project.githubStars}
-                    className="h-5"
-                    onError={(e) => (e.currentTarget.style.display = 'none')}
+                  <StarBadge
+                    shieldsUrl={project.githubStars}
+                    repoLink={project.link}
                   />
                 )}
               </div>
