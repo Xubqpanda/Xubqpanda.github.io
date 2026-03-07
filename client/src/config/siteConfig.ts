@@ -112,6 +112,8 @@ export const publications = [
       { text: "Paper", url: "https://arxiv.org/abs/2508.12281" },
       { text: "Code", url: "https://github.com/NEUIR/LegalDelta" },
     ],
+    arxivId: "2508.12281",
+    minCiteCount: 3,
   },
   {
     id: 3,
@@ -125,6 +127,8 @@ export const publications = [
       { text: "Paper", url: "https://arxiv.org/abs/2401.15371" },
       { text: "Code", url: "https://github.com/NEUIR/LegalDuet" },
     ],
+    arxivId: "2401.15371",
+    minCiteCount: 2,
   },
 ];
 

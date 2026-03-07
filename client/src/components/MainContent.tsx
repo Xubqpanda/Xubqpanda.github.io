@@ -1,4 +1,5 @@
 import StarBadge from "@/components/StarBadge";
+import CiteBadge from "@/components/CiteBadge";
 import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { 
@@ -112,6 +113,13 @@ export default function MainContent() {
                   <StarBadge
                     shieldsUrl={pub.githubStars}
                     repoLink={pub.links?.find((l) => l.text === "Code")?.url}
+                  />
+                )}
+                {'minCiteCount' in pub && (
+                  <CiteBadge
+                    arxivId={'arxivId' in pub ? pub.arxivId as string : undefined}
+                    minCiteCount={(pub as { minCiteCount?: number }).minCiteCount ?? 0}
+                    paperLink={pub.links?.find(l => l.text === "Paper")?.url}
                   />
                 )}
               </div>
