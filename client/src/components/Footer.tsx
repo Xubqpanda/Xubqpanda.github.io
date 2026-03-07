@@ -42,14 +42,14 @@ export default function Footer() {
           © {currentYear} Buqiang Xu. Site last updated {lastUpdated}
         </p>
         <p className="text-center text-sm text-gray-500 font-light mt-2">
-          Feel free to fork this GitHub and develop your website!{' '}
+          This site is adapted from the original work by 10-OASIS-01. Feel free to fork this GitHub and develop your own version{' '}
           <a 
-            href="https://github.com/xubqpanda/xubqpanda.github.io" 
+            href="https://github.com/10-OASIS-01/10-OASIS-01.github.io" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
           >
-            @xubqpanda/xubqpanda.github.io
+            @10-OASIS-01/10-OASIS-01.github.io
           </a>
         </p>
         
