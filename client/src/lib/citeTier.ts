@@ -1,7 +1,7 @@
 // ============================================================
 // citeTier.ts — Citation 等级工具函数
 // ============================================================
-
+const CITE_CACHE_TTL = 60 * 60 * 1000;
 export type CitationParticleType =
   | "snow" | "drift" | "bubble" | "rain" | "ripple"
   | "orbit" | "crystal" | "spark" | "flame" | "confetti";
@@ -56,13 +56,28 @@ export function formatCiteCount(n: number): string {
  * 接受 arXiv ID，例如 "2508.12281"
  */
 export async function fetchCiteCount(arxivId: string): Promise<number> {
+  const cacheKey = `cite_cache_${arxivId}`;
+  try {
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+      const { count, timestamp } = JSON.parse(cached);
+      if (Date.now() - timestamp < CITE_CACHE_TTL) return count;
+    }
+  } catch {}
+
   const res = await fetch(
     `https://api.semanticscholar.org/graph/v1/paper/arXiv:${arxivId}?fields=citationCount`,
-    { headers: { "Accept": "application/json" } }
+    { headers: { Accept: "application/json" } }
   );
   if (!res.ok) throw new Error(`Semantic Scholar API ${res.status}`);
   const data = (await res.json()) as { citationCount?: number };
-  return data.citationCount ?? 0;
+  const count = data.citationCount ?? 0;
+
+  try {
+    localStorage.setItem(cacheKey, JSON.stringify({ count, timestamp: Date.now() }));
+  } catch {}
+
+  return count;
 }
 
 /**

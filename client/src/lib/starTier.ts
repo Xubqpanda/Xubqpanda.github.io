@@ -1,6 +1,7 @@
 // ============================================================
 // starTier.ts — GitHub Star 等级工具函数（TypeScript 版）
 // ============================================================
+const CACHE_TTL = 60 * 60 * 1000; // 1小时
 
 export type ParticleType =
   | "snow"
@@ -85,13 +86,31 @@ export async function fetchStarCount(
   repo: string,
   token?: string
 ): Promise<number> {
+  // 读缓存
+  const cacheKey = `star_cache_${repo}`;
+  try {
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+      const { count, timestamp } = JSON.parse(cached);
+      if (Date.now() - timestamp < CACHE_TTL) return count;
+    }
+  } catch {}
+
+  // 请求 API
   const headers: HeadersInit = { Accept: "application/vnd.github+json" };
   if (token) headers["Authorization"] = `Bearer ${token}`;
 
   const res = await fetch(`https://api.github.com/repos/${repo}`, { headers });
   if (!res.ok) throw new Error(`GitHub API ${res.status}`);
   const data = (await res.json()) as { stargazers_count?: number };
-  return data.stargazers_count ?? 0;
+  const count = data.stargazers_count ?? 0;
+
+  // 写缓存
+  try {
+    localStorage.setItem(cacheKey, JSON.stringify({ count, timestamp: Date.now() }));
+  } catch {}
+
+  return count;
 }
 
 /** 根据 star 数返回对应等级 */
