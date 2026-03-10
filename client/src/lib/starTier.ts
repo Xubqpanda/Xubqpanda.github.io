@@ -82,12 +82,10 @@ export function extractRepoFromShieldsUrl(shieldsUrl: string): string | null {
 }
 
 /** 调用 GitHub API 获取 star 数 */
-export async function fetchStarCount(
-  repo: string,
-  token?: string
-): Promise<number> {
-  // 读缓存
+export async function fetchStarCount(repo: string, token?: string): Promise<number> {
   const cacheKey = `star_cache_${repo}`;
+
+  // 1. 读新鲜缓存
   try {
     const cached = localStorage.getItem(cacheKey);
     if (cached) {
@@ -96,21 +94,27 @@ export async function fetchStarCount(
     }
   } catch {}
 
-  // 请求 API
-  const headers: HeadersInit = { Accept: "application/vnd.github+json" };
-  if (token) headers["Authorization"] = `Bearer ${token}`;
-
-  const res = await fetch(`https://api.github.com/repos/${repo}`, { headers });
-  if (!res.ok) throw new Error(`GitHub API ${res.status}`);
-  const data = (await res.json()) as { stargazers_count?: number };
-  const count = data.stargazers_count ?? 0;
-
-  // 写缓存
+  // 2. 调 API
   try {
+    const headers: HeadersInit = { Accept: "application/vnd.github+json" };
+    if (token) headers["Authorization"] = `Bearer ${token}`;
+    const res = await fetch(`https://api.github.com/repos/${repo}`, { headers });
+    if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+    const data = (await res.json()) as { stargazers_count?: number };
+    const count = data.stargazers_count ?? 0;
     localStorage.setItem(cacheKey, JSON.stringify({ count, timestamp: Date.now() }));
-  } catch {}
-
-  return count;
+    return count;
+  } catch {
+    // 3. API 失败 → 回退到过期的旧缓存
+    try {
+      const cached = localStorage.getItem(cacheKey);
+      if (cached) {
+        const { count } = JSON.parse(cached);
+        return count;
+      }
+    } catch {}
+    throw new Error("no data");
+  }
 }
 
 /** 根据 star 数返回对应等级 */
