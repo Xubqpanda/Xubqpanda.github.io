@@ -113,7 +113,7 @@ export const publications = [
       { text: "Code", url: "https://github.com/NEUIR/LegalDelta" },
     ],
     arxivId: "2508.12281",
-    minCiteCount: 3,
+    minCiteCount: 4,
   },
   {
     id: 3,
@@ -158,64 +158,6 @@ export const researchExperiences = [
   },
 ];
 
-// ===========================
-// Industry Experiences
-// ===========================
-// export const industryExperiences = [
-//   {
-//     id: 1,
-//     title: "Horizon Robotics – Cloud Platform Intern",
-//     period: "Mentor: Yusen Qin (VP of Technology, D-Robotics)",
-//     mentorLink: "https://www.linkedin.com/in/yusen-qin-5b23345b/?originalSubdomain=cn",
-//     location: "Beijing, China",
-//     duration: "June 2025 – Present"
-//   },
-// ];
-
-// ===========================
-// Talks
-// ===========================
-// export const talks = [
-//   {
-//     id: 1,
-//     date: "2024.08",
-//     title: "Retrieval-Augmented Generation Modeling",
-//     event: "Mingtong Weilai (Beijing) Digital Health Science & Technology Research Institute",
-//     location: ""
-//   },
-// ];
-
-// ===========================
-// Academic Service
-// ===========================
-// export const academicService = [
-//   {
-//     id: 1,
-//     role: "Co-Founder of VapourX",
-//     description: "an open community for embodied AI beginners, enthusiasts, and researchers.",
-//     descriptionLink: "https://vapour-x.cn",
-//     linkText: "VapourX"
-//   },
-//   {
-//     id: 2,
-//     role: "Student Committee",
-//     description: "of TriFusion Workshop @ SIGGRAPH Asia 2025 — Towards Embodied Intelligence Across Humans, Avatars, and Humanoid Robotics (responsible for workshop email communications).",
-//     descriptionLink: "https://sa2025.siggraph.org/"
-//   },
-//   {
-//     id: 3,
-//     role: "Contributor",
-//     description: "of Embodied-AI-Guide GitHub repo.",
-//     descriptionLink: "https://github.com/TianxingChen/Embodied-AI-Guide",
-//     githubBadge: "https://img.shields.io/github/stars/TianxingChen/Embodied-AI-Guide",
-//     linkText: "Embodied-AI-Guide"
-//   },
-//   {
-//     id: 4,
-//     role: "Reviewer",
-//     description: "for CHI 2025, Chinese CHI 2024."
-//   },
-// ];
 
 // ===========================
 // Awards
