@@ -94,6 +94,14 @@ export const navigationMenu = [
 export const publications = [
   {
     id: 1,
+    authors: "Buqiang Xu*, Yijun Chen*, Jizhan Fang, Ruobin Zhong, Yunzhi Yao, Yuqi Zhu, Lun Du, Shumin Deng†",
+    title: "StructMem: Structured Memory for Long-Horizon Behavior in LLMs",
+    venue: "ACL 2026 [CCF-A] Main Conference",
+    year: 2026,
+    keywords: ["Structured Memory", "Long-horizon Behavior", "LLM Agents"],
+  },
+  {
+    id: 2,
     authors: "Xinle Deng, Yida Xue, Yijun Chen, Mingjun Mao, Ruobin Zhong, Buqiang Xu, Jizhan Fang, Haoming Xu, Tingwei Wu, Yajing Xu, Shumin Deng, Haofen Wang, Huajun Chen, Ningyu Zhang†",
     title: "MobileMem: Evaluating Long-Horizon Memory for Language Agents in Real-World Mobile Environments",
     venue: "ICLR 2026 [CCF-A] Workshop LLA",
@@ -101,7 +109,7 @@ export const publications = [
     keywords: ["Agentic Memory", "Long-term Memory", "Agent Evaluation"],
   },
   {
-    id: 2,
+    id: 3,
     authors: "Xin Dai*, Buqiang Xu*, Zhenghao Liu†, Yukun Yan, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Ge Yu",
     title: "LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain",
     venue: "ICASSP 2026 [CCF-B]",
@@ -113,10 +121,10 @@ export const publications = [
       { text: "Code", url: "https://github.com/NEUIR/LegalDelta" },
     ],
     arxivId: "2508.12281",
-    minCiteCount: 4,
+    minCiteCount: 3,
   },
   {
-    id: 3,
+    id: 4,
     authors: "Buqiang Xu*, Xin Dai*, Zhenghao Liu†, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Yukun Yan, Liner Yang, Yu Gu, Ge Yu",
     title: "LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning",
     venue: "ADMA 2025 [CCF-C] Best Paper Award",
@@ -131,7 +139,6 @@ export const publications = [
     minCiteCount: 2,
   },
 ];
-
 // ===========================
 // Research Experiences
 // ===========================
