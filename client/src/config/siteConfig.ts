@@ -93,7 +93,22 @@ export const navigationMenu = [
 // ===========================
 export const publications = [
   {
-    id: 1,
+    id: 4,
+    authors: "Yi Zhong, Buqiang Xu, Yijun Wang, Zifei Shan, Shuofei Qiao, Guozhou Zheng, Ningyu Zhang†",
+    title: "Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language",
+    venue: "Arxiv",
+    year: 2026,
+    keywords: ["Workflow", "Benchmark", "Natural Language Processing"],
+    githubStars: "https://img.shields.io/github/stars/zjunlp/Chat2Workflow?style=flat",
+    links: [
+      { text: "Paper", url: "https://arxiv.org/abs/2604.19667" },
+      { text: "Code", url: "https://github.com/zjunlp/Chat2Workflow" },
+    ],
+    arxivId: "2604.19667",
+    minCiteCount: 0,
+  },
+  {
+    id: 2,
     authors: "Buqiang Xu*, Yijun Chen*, Jizhan Fang, Ruobin Zhong, Yunzhi Yao, Yuqi Zhu, Lun Du, Shumin Deng†",
     title: "StructMem: Structured Memory for Long-Horizon Behavior in LLMs",
     venue: "ACL 2026 [CCF-A] Main Conference",
@@ -101,15 +116,15 @@ export const publications = [
     keywords: ["Structured Memory", "Long-horizon Behavior", "LLM Agents"],
   },
   {
-    id: 2,
+    id: 3,
     authors: "Xinle Deng, Yida Xue, Yijun Chen, Mingjun Mao, Ruobin Zhong, Buqiang Xu, Jizhan Fang, Haoming Xu, Tingwei Wu, Yajing Xu, Shumin Deng, Haofen Wang, Huajun Chen, Ningyu Zhang†",
     title: "MobileMem: Evaluating Long-Horizon Memory for Language Agents in Real-World Mobile Environments",
     venue: "ICLR 2026 [CCF-A] Workshop LLA",
     year: 2026,
-    keywords: ["Agentic Memory", "Long-term Memory", "Agent Evaluation"],
+    keywords: ["Agentic Memory", "Long-term Memory", "Agent Evaluation", "Benchmark"],
   },
   {
-    id: 3,
+    id: 4,
     authors: "Xin Dai*, Buqiang Xu*, Zhenghao Liu†, Yukun Yan, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Ge Yu",
     title: "LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain",
     venue: "ICASSP 2026 [CCF-B]",
@@ -121,10 +136,10 @@ export const publications = [
       { text: "Code", url: "https://github.com/NEUIR/LegalDelta" },
     ],
     arxivId: "2508.12281",
-    minCiteCount: 3,
+    minCiteCount: 5,
   },
   {
-    id: 4,
+    id: 5,
     authors: "Buqiang Xu*, Xin Dai*, Zhenghao Liu†, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Yukun Yan, Liner Yang, Yu Gu, Ge Yu",
     title: "LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning",
     venue: "ADMA 2025 [CCF-C] Best Paper Award",
