@@ -120,7 +120,7 @@ export const publications = [
       { text: "Code", url: "https://github.com/zjunlp/LightMem" },
     ],
     arxivId: "2604.21748",
-    minCiteCount: 5,
+    minCiteCount: 0,
   },
   {
     id: 3,
