@@ -114,6 +114,13 @@ export const publications = [
     venue: "ACL 2026 [CCF-A] Main Conference",
     year: 2026,
     keywords: ["Structured Memory", "Long-horizon Behavior", "LLM Agents"],
+    githubStars: "https://img.shields.io/github/stars/zjunlp/LightMem?style=flat",
+    links: [
+      { text: "Paper", url: "http://arxiv.org/abs/2604.21748" },
+      { text: "Code", url: "https://github.com/zjunlp/LightMem" },
+    ],
+    arxivId: "2604.21748",
+    minCiteCount: 5,
   },
   {
     id: 3,
