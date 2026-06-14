@@ -26,7 +26,7 @@ export const personalInfo = {
   aboutMe: {
     intro: `I am a senior undergraduate student majoring in Computer Science at Northeastern University (NEU), China. Starting Fall 2026, I will be pursuing my Master's degree at the School of Software Technology, Zhejiang University (ZJU). Currently, I am a research assistant at Zjunlp Lab.`,
   
-    researchFocus: `My research is driven by the quest for AGI. I am particularly fascinated by how agents can maintain a coherent "self" and up-to-date world model through time. Currently, my work focuses on developing advanced memory architectures for autonomous agents and exploring efficient ways to update or edit model knowledge without retraining.`,
+    // researchFocus: `My research is driven by the quest for AGI. I am particularly fascinated by how agents can maintain a coherent "self" and up-to-date world model through time. Currently, my work focuses on developing advanced memory architectures for autonomous agents and exploring efficient ways to update or edit model knowledge without retraining.`,
   
     researchInterests: [
       {
