@@ -94,6 +94,21 @@ export const navigationMenu = [
 export const publications = [
   {
     id: 1,
+    authors: "Yijun Chen*, Boyi Xiao*, Yixian Zhao*, Haoting Xia*, Buqiang Xu, Jizhan Fang, Yanya Li, Yaqi Zheng, Xuehai Wang, Zirui Xue, Liuxin Zhang, Hui Li, Ningyu Zhang†",
+    title: "LightMem-Ego: Your AI Memory for Everyday Life",
+    venue: "Arxiv",
+    year: 2026,
+    keywords: ["LLM Agents", "Personal AI Assistant", "Wearable AI", "Multimodal Memory"],
+    githubStars: "https://img.shields.io/github/stars/zjunlp/LightMem-Ego?style=flat",
+    links: [
+      { text: "Paper", url: "https://arxiv.org/abs/2607.11487" },
+      { text: "Code", url: "https://github.com/zjunlp/LightMem-Ego" },
+    ],
+    arxivId: "2607.11487",
+    minCiteCount: 0,
+  },
+  {
+    id: 2,
     authors: "Buqiang Xu*, Zirui Xue*, Dianmou Chen*, Chenyang Fu*, Chiyu Wu*, Caiying Huang*, Chen Jiang, Jizhan Fang, Xinle Deng, Yijun Chen, Yunzhi Yao, Xuehai Wang, Jin Shang, Gong Yu, Ningyu Zhang†",
     title: "TokenPilot: Cache-Efficient Context Management for LLM Agents",
     venue: "Arxiv",
@@ -108,7 +123,7 @@ export const publications = [
     minCiteCount: 0,
   },
   {
-    id: 2,
+    id: 3,
     authors: "Jizhan Fang, Buqiang Xu, Zhixian Wang, Haoliang Cao, Xinle Deng, Baohua Dong, Hangcheng Zhu, Ruohui Huang, Gang Yu, Ying Wei, Guozhou Zheng, Feiyu Xiong, Haofen Wang, Huajun Chen, Ningyu Zhang†",
     title: "Rethinking Memory as Continuously Evolving Connectivity",
     venue: "Arxiv",
@@ -123,7 +138,7 @@ export const publications = [
     minCiteCount: 0,
   },
   {
-    id: 3,
+    id: 4,
     authors: "Xinle Deng, Ruobin Zhong, Hujin Peng, Xiaoben Lu, Yanzhe Wu, Guang Li, Buqiang Xu, Yunzhi Yao, Jizhan Fang, Haoliang Cao, Junjie Guo, Yuan Yuan, Ziqing Ma, Yuanqiang Yu, Rui Hu, Baohua Dong, Hangcheng Zhu, Ningyu Zhang†",
     title: "MemTrace: Tracing and Attributing Errors in Large Language Model Memory Systems",
     venue: "Arxiv",
@@ -138,7 +153,7 @@ export const publications = [
     minCiteCount: 0,
   },
   {
-    id: 4,
+    id: 5,
     authors: "Yi Zhong, Buqiang Xu, Yijun Wang, Zifei Shan, Shuofei Qiao, Guozhou Zheng, Ningyu Zhang†",
     title: "Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language",
     venue: "Arxiv",
@@ -153,7 +168,7 @@ export const publications = [
     minCiteCount: 0,
   },
   {
-    id: 5,
+    id: 6,
     authors: "Buqiang Xu*, Yijun Chen*, Jizhan Fang, Ruobin Zhong, Yunzhi Yao, Yuqi Zhu, Lun Du, Shumin Deng†",
     title: "StructMem: Structured Memory for Long-Horizon Behavior in LLMs",
     venue: "ACL 2026 [CCF-A] Main Conference",
@@ -168,7 +183,7 @@ export const publications = [
     minCiteCount: 5,
   },
   {
-    id: 6,
+    id: 7,
     authors: "Xinle Deng, Yida Xue, Yijun Chen, Mingjun Mao, Ruobin Zhong, Buqiang Xu, Jizhan Fang, Haoming Xu, Tingwei Wu, Yajing Xu, Shumin Deng, Haofen Wang, Huajun Chen, Ningyu Zhang†",
     title: "MobileMem: Evaluating Long-Horizon Memory for Language Agents in Real-World Mobile Environments",
     venue: "ICLR 2026 [CCF-A] Workshop LLA",
@@ -176,7 +191,7 @@ export const publications = [
     keywords: ["Agentic Memory", "Long-term Memory", "Agent Evaluation", "Benchmark"],
   },
   {
-    id: 7,
+    id: 8,
     authors: "Xin Dai*, Buqiang Xu*, Zhenghao Liu†, Yukun Yan, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Ge Yu",
     title: "LegalΔ: Enhancing Legal Reasoning in LLMs via Reinforcement Learning with Chain-of-Thought Guided Information Gain",
     venue: "ICASSP 2026 [CCF-B]",
@@ -191,7 +206,7 @@ export const publications = [
     minCiteCount: 11,
   },
   {
-    id: 8,
+    id: 9,
     authors: "Buqiang Xu*, Xin Dai*, Zhenghao Liu†, Huiyuan Xie, Xiaoyuan Yi, Shuo Wang, Yukun Yan, Liner Yang, Yu Gu, Ge Yu",
     title: "LegalDuet: Learning Fine-grained Representations for Legal Judgment Prediction via a Dual-View Contrastive Learning",
     venue: "ADMA 2025 [CCF-C] Best Paper Award",
@@ -203,7 +218,7 @@ export const publications = [
       { text: "Code", url: "https://github.com/NEUIR/LegalDuet" },
     ],
     arxivId: "2401.15371",
-    minCiteCount: 4,
+    minCiteCount: 2,
   },
 ];
 // ===========================
